@@ -14,7 +14,7 @@ public class WebConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry
                         .addMapping("/**")
-                        .allowedOrigins("https://ut-nextjs.onrender.com/")
+                        .allowedOrigins("http://ns8gcg0k04cggkoscks0oo0c.91.107.213.90.sslip.io/")
                         .allowedMethods("GET", "POST", "PUT", "DELETE")
                         .allowedHeaders("*")
                         .allowCredentials(true);
