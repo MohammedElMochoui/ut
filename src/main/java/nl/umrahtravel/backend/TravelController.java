@@ -25,4 +25,9 @@ public class TravelController {
         return this.travelService.getAllTravels();
     }
 
+    @GetMapping("/delete-all")
+    public void deleteAllTravels() {
+        this.travelService.deleteAllTravels();
+    }
+
 }

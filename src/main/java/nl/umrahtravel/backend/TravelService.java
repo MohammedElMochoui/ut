@@ -41,6 +41,10 @@ public class TravelService {
         )).toList();
     }
 
+    public void deleteAllTravels() {
+        this.travelRepository.deleteAll();
+    }
+
     private Double calculatePrice(CreateTravelDTO t) {
         return t.getAdults() * 2000.0 +
                 t.getChildren() * 2000.0 +
